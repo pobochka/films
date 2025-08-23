@@ -6,6 +6,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -20,11 +24,8 @@ jobs:
         env:
           REACT_APP_TMDB_API_KEY: ${{ secrets.REACT_APP_TMDB_API_KEY }}
           REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
-      - name: Configure Git
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "Pobochka"
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
