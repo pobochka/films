@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+.list {
+  margin-inline: auto;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 450px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
