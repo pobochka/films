@@ -1,3 +1,7 @@
+## Источник данных
+Данные о фильмах получены через [TMDB API](https://www.themoviedb.org/documentation/api).  
+This product uses the TMDB API but is not endorsed or certified by TMDB.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
