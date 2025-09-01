@@ -3,11 +3,29 @@
 }
 
 .list {
-  margin-inline: auto;
-  margin-top: 2em;
+  margin-inline: 3em;
+  margin-block: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  gap: 1em;
+}
+
+.listItems {
+  background: radial-gradient(
+    circle,
+    rgba(153, 164, 199, 1) 9%,
+    rgba(3, 3, 110, 1) 48%,
+    rgba(18, 1, 1, 1) 81%
+  );
+  padding-inline: 1em;
+  padding-block: 1em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+}
+
+#title {
+  margin-bottom: 0.3em;
 }
 
 @media (max-width: 450px) {

@@ -45,7 +45,7 @@ const List = () => {
           {movies.map((movie) => (
             <div key={movie.id} className="listItems">
               <div className="leftInfo">
-                <h1>{movie.title}</h1>
+                <h1 id="title">{movie.title}</h1>
                 <img
                   src={`//image.tmdb.org/t/p/w500/${movie.poster_path}`}
                   alt={`${movie.title}`}
