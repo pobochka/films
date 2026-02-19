@@ -1,24 +1,19 @@
-body {
-  background: linear-gradient(
-    -45deg,
-    rgba(18, 1, 1, 1),
-    rgb(19, 19, 110),
-    rgb(2, 2, 90)
-  );
-  min-height: 100vh;
-  background-size: 230% 230%;
-  background-attachment: fixed;
-  animation: gradient 30s ease infinite;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+body {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -6,10 +6,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="footerTitle">
-          <p>
-            This product uses the TMDB API but is not endorsed or certified by
-            TMDB.
-          </p>
+          <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
         </div>
       </div>
     </>

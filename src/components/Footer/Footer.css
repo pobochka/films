@@ -1,25 +1,4 @@
-* {
-  margin: 0;
-}
 .footer {
-  height: 10vh;
-  padding-block: 5em;
-  padding-inline: 1.5em;
-  background: linear-gradient(
-    0deg,
-    rgba(54, 4, 94, 0.753) 75%,
-    rgba(87, 199, 133, 0) 99%
-  );
-  color: aliceblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: larger;
-}
-
-@media (max-width: 380px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 2em;
-    justify-content: center;
-  }
+  flex: 0 0 auto;
+  background: #3d0000;
 }
