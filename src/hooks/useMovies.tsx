@@ -42,7 +42,7 @@ export const UseMovies = () => {
 
   useEffect(() => {
     loadContent(currentPage);
-  }, []);
+  }, [currentPage, loadContent]);
 
   //Переход на другую страницу
   const goToPage = (page: number) => {
